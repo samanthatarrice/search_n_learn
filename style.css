@@ -5,7 +5,7 @@ html {
 }
 
 .game-container {
-  margin-top: 10rem;
+  margin-top: 5rem;
   position: relative;
 }
 
@@ -90,7 +90,7 @@ h1 {
 }
 
 .search-items img {
-  width: 60%;
+  width: 50%;
   display: block;
   margin: 10px auto;
   /* border: red solid 1px; */
