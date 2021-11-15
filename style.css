@@ -252,9 +252,10 @@ h1 {
 
 .twelve-days {
   display: none; /*change to block in script*/
-  width: 80%;
-  height: 85%;
-  min-width: 400px;
+  width: 1120px;
+  height: 630px;
+  max-width: 100%;
+  max-height: calc((100vw - 40px) / (16/9));
   margin: 4% auto;
   border: 10px solid white;
   border-radius: 10px; 
