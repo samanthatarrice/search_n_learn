@@ -13,7 +13,7 @@ imagesToFind.forEach(element => {
       twelveDays.style.display = 'block';
 
       const close = document.createElement('img');
-      close.src = 'images/close.png';
+      close.src = 'images/game_controls/close.png';
       modalBackground.appendChild(close).classList.add('close');
 
       close.addEventListener('click', () => modalBackground.style.display = 'none');
@@ -22,10 +22,14 @@ imagesToFind.forEach(element => {
   })
 })
 
-const reload = document.querySelector('.fa-sync-alt');
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', () => {
+  alert('make this button reset game later');
+})
 
-reload.addEventListener('click', () => {
-  alert('working');
+const mute = document.querySelector('.mute');
+mute.addEventListener('click', () => {
+  alert('make this button mute');
 })
 
 // `

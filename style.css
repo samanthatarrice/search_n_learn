@@ -64,12 +64,11 @@ h1 {
   min-width: 85%;
   margin: 0 auto;
   position: relative;
-  top: 12px;
-  z-index: -1;
+  top: 15px;
 }
 
 .tabs {
-  height: 60px;
+  height: 7rem;
   width: 12%;
   border-radius: 10px;
 }
@@ -80,19 +79,19 @@ h1 {
   margin: 12px auto;
 }
 
-.forest-tab {
+.ocean-tab {
   background: #EF476F;
 }
 
-.ocean-tab {
+.rainforest-tab {
   background: #FFD166;
 }
 
-.savannah-tab {
+.town-tab {
   background: #06D6A0;
 }
 
-.town-tab {
+.space-tab {
   background: #118AB2;
 }
 
@@ -311,11 +310,13 @@ h1 {
     height: 50px;
   }
 
-  .fa-volume-mute {
-    font-size: 3rem;
+  .game-buttons {
+    width: 3.5rem;
+    height: 3.5rem;
+    bottom: 40%;
   }
 
-  .fa-sync-alt {
-    font-size: 2.3rem;
+  .reset {
+    left: 10%;
   }
 }
