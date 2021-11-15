@@ -5,17 +5,56 @@ html {
 }
 
 .game-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
   position: relative;
 }
 
 h1 {
-  position: absolute;
-  font: 4.5rem 'Bubblegum Sans', cursive;
-  color: #073B4C;
-  top: -4%;
-  left: 9%;
+  display: inline-block;
+  width: 500px;
+  font: 10rem 'Cookie', cursive;
+  background: linear-gradient(to right, #EF476F, 30%, #FFD166, 70%, #118AB2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+  text-align: center;
 }
+
+/* .fas {
+  position: absolute;
+  font-size: 5rem;
+  color: #118AB2;
+}
+
+.fa-volume-mute {
+  left: 2%;
+  bottom: 23%;
+
+}
+
+.fa-sync-alt {
+  font-size: 4rem;
+  left: %;
+  bottom: 30%;
+  color: #EF476F;
+} */
+
+.game-buttons {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 1%;
+  bottom: 30%;
+}
+
+.reset {
+  left: 8%;
+}
+
 
 .tab-container {
   display: flex;
@@ -90,7 +129,7 @@ h1 {
 }
 
 .search-items img {
-  width: 50%;
+  width: 60%;
   display: block;
   margin: 10px auto;
   /* border: red solid 1px; */
@@ -230,22 +269,22 @@ h1 {
   background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content {
+/* .modal-content {
 
   background-color: #fefefe;
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 5% auto; 
   border: 1px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
+  width: 70%;
   height: 100px;
   border-radius: 10px;
   position: relative;
-}
+} */
 
 .close {
-  width: 5%;
+  width: 8%;
   position: absolute;
   right: 2%;
-  top: 4%;
+  top: 2%;
 }
 
 /* VIDEOS */
@@ -254,7 +293,7 @@ h1 {
   display: none; /*change to block in script*/
   width: 1120px;
   height: 630px;
-  max-width: 100%;
+  max-width: 90%;
   max-height: calc((100vw - 40px) / (16/9));
   margin: 4% auto;
   border: 10px solid white;
@@ -263,11 +302,20 @@ h1 {
 
 @media screen and (max-width: 930px) {
   h1 {
-    font-size: 3rem;
-    top: -1%;
+    font-size: 6rem;
+    width: 300px;
+    text-align: center;
   }
 
   .tabs {
     height: 50px;
+  }
+
+  .fa-volume-mute {
+    font-size: 3rem;
+  }
+
+  .fa-sync-alt {
+    font-size: 2.3rem;
   }
 }
