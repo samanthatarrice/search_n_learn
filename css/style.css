@@ -5,13 +5,14 @@ html {
 }
 
 .game-container {
-  margin: 3rem 0 10rem 0;
+  margin: 5rem 0 10rem 0;
   position: relative;
 }
 
 .title {
   display: inline-block;
-  width: 500px;
+  width: 600px;
+  text-align: center;
   font: 10rem 'Cookie', cursive;
   background: linear-gradient(to right, #EF476F, 30%, #FFD166, 70%, #118AB2);
   -webkit-background-clip: text;
@@ -21,7 +22,6 @@ html {
   position: relative;
      left: 50%;
      transform: translateX(-50%);
-  text-align: center;
 }
 
 .game-buttons {
@@ -38,8 +38,10 @@ html {
 
 .tab-container {
   display: flex;
+  display: -webkit-flex;
   justify-content: end;
   /* this isn't working on the ipad */
+  -webkit-justify-content: end;
   width: 80%;
   margin: 0 auto;
   position: relative;
@@ -82,7 +84,8 @@ html {
   width: 80%;
   /* min-width: 85%; */
   margin: 0 auto;
-  background-color: #073B4C;
+  background: gray;
+  /* background-color: #073B4C; */
   display: flex;
   border-radius: 10px;
 }
@@ -90,7 +93,8 @@ html {
 .search-items {
   display: block;
   min-width: 20%;
-  border: solid 1rem #073B4C;
+  border: solid 1rem gray;
+  /* border: solid 1rem #073B4C; */
   border-right: white;
   background: white;
   display: flex;
@@ -116,7 +120,8 @@ html {
   min-width: 78%;
   height: auto;
   position: relative;
-  border: solid 10px #073B4C;
+  /* border: solid 10px #073B4C; */
+  border: solid 1rem gray;
   border-radius: 10px;
   background: white;
 }
@@ -130,7 +135,7 @@ html {
 
 .instructions {
   position: absolute;
-  width: 80%;
+  width: 83%;
   left: 10%;
   top: 15%;
 }
@@ -164,6 +169,29 @@ html {
   top: 2%;
 }
 
+@media screen and (max-width: 1025px) {
+  .title {
+    font-size: 7rem;
+  }
+
+  .tabs {
+    height: 72px;
+  }
+
+  .game-buttons {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .instructions-container {
+    height: 400px;
+  }
+
+  .instructions {
+    font-size: 1.7rem;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .title {
     font-size: 6rem;
@@ -172,7 +200,7 @@ html {
   }
 
   .tabs {
-    height: 60px;
+    height: 55px;
   }
 
   .tabs img {
@@ -186,10 +214,14 @@ html {
   }
 
   .reset {
-    left: 11%;
+    left: 12%;
+  }
+
+  .instructions-container {
+    height: 300px;
   }
 
   .instructions {
-    height: 300px;
+    font-size: 1.2rem;
   }
 }

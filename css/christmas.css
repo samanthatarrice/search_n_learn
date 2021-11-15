@@ -1,3 +1,15 @@
+.game-board {
+  background: #073B4C;
+}
+
+.search-items, .background-container {
+  border: solid 1rem #073B4C;
+}
+
+.search-items {
+  border-right: white;
+}
+
 .christmas-background {
   vertical-align: bottom;
   width: 100%;
