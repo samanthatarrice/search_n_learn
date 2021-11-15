@@ -1,0 +1,117 @@
+.christmas-background {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.wreath {
+  width: 10%;
+  right: 35%;
+  top: 10%;
+}
+
+.cat {
+  width: 10%;
+  bottom: 20%;
+  left: 45%;
+}
+
+.gift {
+  position: absolute;
+  width: 14%;
+  bottom: 3%;
+  left: 43%;
+}
+
+.dog {
+  position: absolute;
+  width: 10%;
+  bottom: 24%;
+  right: 18%;
+}
+
+.hat {
+  width: 10%;
+  bottom: 33%;
+  right: 17%;
+  z-index: 1;
+}
+
+.mistletoe {
+  width: 7%;
+  left: 3%;
+  top: 6%;
+  transform: rotate(-45deg);
+}
+
+.santa {
+  bottom: 44.25%;
+  right: 17%;
+}
+
+.vertical-bar {
+  position: absolute;
+  width: 1.4%;
+  height: 20%;
+  background: white;
+  right: 18.6%;
+  bottom: 44%;
+}
+
+.horizontal-bar {
+  position: absolute;
+  width: 12%;
+  height: 1.5%;
+  background: white;
+  right: 14%;
+  bottom: 53.3%;
+}
+
+.snowman {
+  width: 8%;
+  top: 39.8%;
+  left: 12%;
+}
+
+.ornament {
+  width: 5%;
+  right: 37%;
+  bottom: 28%;
+}
+
+.calendar {
+  width: 7%;
+  top: 12%;
+  left: 36%;
+}
+
+.candy-cane {
+  width: 5%;
+  top: 28%;
+  left: 45.5%;
+}
+
+.table {
+  position: absolute;
+  width: 21.5%;
+  bottom: 0;
+  right: 8%;
+}
+
+.hot-chocolate {
+  width: 7%;
+  bottom: 23%;
+  right: 10%;
+}
+
+/* VIDEOS */
+
+.twelve-days {
+  display: none; /*change to block in script*/
+  width: 1120px;
+  height: 630px;
+  max-width: 90%;
+  max-height: calc((100vw - 40px) / (16/9));
+  margin: 4% auto;
+  border: 10px solid white;
+  border-radius: 10px; 
+}

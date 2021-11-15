@@ -1,0 +1,195 @@
+html {
+  margin: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  margin: 3rem 0 10rem 0;
+  position: relative;
+}
+
+.title {
+  display: inline-block;
+  width: 500px;
+  font: 10rem 'Cookie', cursive;
+  background: linear-gradient(to right, #EF476F, 30%, #FFD166, 70%, #118AB2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+  text-align: center;
+}
+
+.game-buttons {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 5%;
+  bottom: 30%;
+}
+
+.reset {
+  left: 12%;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: end;
+  /* this isn't working on the ipad */
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+}
+
+.tabs {
+  height: 9rem;
+  width: 12%;
+  border-radius: 10px;
+}
+
+.tabs img {
+  width: 30%;
+  display: block;
+  margin: 15px auto;
+}
+
+.ocean-tab {
+  background: #EF476F;
+}
+
+.rainforest-tab {
+  background: #FFD166;
+}
+
+.town-tab {
+  background: #06D6A0;
+}
+
+.space-tab {
+  background: #118AB2;
+}
+
+.christmas-tab {
+  background: #073B4C;
+}
+
+.game-board {
+  width: 80%;
+  /* min-width: 85%; */
+  margin: 0 auto;
+  background-color: #073B4C;
+  display: flex;
+  border-radius: 10px;
+}
+
+.search-items {
+  display: block;
+  min-width: 20%;
+  border: solid 1rem #073B4C;
+  border-right: white;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* filter: grayscale(100%); */
+  /* add this later when image is found */
+}
+
+.item-container {
+  width: 45%;
+}
+
+.search-items img {
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+}
+
+.background-container {
+  min-width: 78%;
+  height: auto;
+  position: relative;
+  border: solid 10px #073B4C;
+  border-radius: 10px;
+  background: white;
+}
+
+.instructions-container {
+  height: 500px;
+  font-size: 2.3rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+}
+
+.instructions {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 15%;
+}
+
+.images-to-find {
+  position: absolute;
+  width: 10%;
+}
+
+
+
+/* MODAL */
+
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.close {
+  width: 8%;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+@media screen and (max-width: 930px) {
+  .title {
+    font-size: 6rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  .tabs {
+    height: 60px;
+  }
+
+  .tabs img {
+    margin: 10px auto;
+  }
+
+  .game-buttons {
+    width: 3rem;
+    height: 3rem;
+    bottom: 40%;
+  }
+
+  .reset {
+    left: 11%;
+  }
+
+  .instructions {
+    height: 300px;
+  }
+}
