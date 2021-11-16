@@ -28,23 +28,28 @@ html {
   width: 6rem;
   height: 6rem;
   position: absolute;
-  left: 5%;
-  bottom: 30%;
+  left: 14%;
+  top: 18%;
+  /* left: 5%;
+  bottom: 30%; */
+
 }
 
 .reset {
-  left: 12%;
+  left: 20%;
 }
 
 .tab-container {
   display: -webkit-flex;
-  -webkit-justify-content: end;
+  /* -webkit-justify-content: end; */
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
   /* this isn't working on the ipad */
   width: 80%;
   margin: 0 auto;
+  /* position: relative; */
   position: relative;
+  left: 32%;
   top: 15px;
 }
 
@@ -178,10 +183,10 @@ html {
     height: 72px;
   }
 
-  .game-buttons {
+  /* .game-buttons {
     width: 4.5rem;
     height: 4.5rem;
-  }
+  } */
 
   .instructions-container {
     height: 400px;
@@ -207,11 +212,11 @@ html {
     margin: 10px auto;
   }
 
-  .game-buttons {
+  /* .game-buttons {
     width: 3rem;
     height: 3rem;
     bottom: 40%;
-  }
+  } */
 
   .reset {
     left: 12%;
