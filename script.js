@@ -4,9 +4,10 @@ imagesToFind.forEach(element => {
   element.addEventListener('click', () => {
     element.style.display = 'none';
 
+    const modalBackground = document.querySelector('.modal-background');
+
     if (element.className.includes('calendar')) {
 
-      const modalBackground = document.querySelector('.modal-background');
       modalBackground.style.display = 'block';
 
       const twelveDays = document.querySelector('.twelve-days');

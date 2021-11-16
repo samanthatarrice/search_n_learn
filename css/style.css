@@ -30,14 +30,14 @@ html {
 
 .top-options {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .game-buttons {
   display: flex;
   position: relative;
-  left: 14%;
+
   /* width: 6rem;
   height: 6rem;
   position: absolute;
@@ -65,11 +65,13 @@ html {
 }
 
 .tab-container {
-  display: flex;
-  display: -webkit-flex;
+  display: inline-flex;
+  display: -webkit-inline-flex;
   position: relative;
   top: 15px;
-  left: 25%;
+  margin-left: 1rem;
+  width: 70%;
+  /* left: 25%; */
   /* margin: 0 auto; */
   /* justify-content: end; */
   /* this isn't working on the ipad */
@@ -84,8 +86,9 @@ html {
 
 .tabs {
   height: 9rem;
-  width: 12%;
+  width: 15%;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .tabs img {
@@ -122,6 +125,8 @@ html {
   /* background-color: #073B4C; */
   display: flex;
   border-radius: 10px;
+  position: relative;
+  z-index: 6;
 }
 
 .search-items {
@@ -136,6 +141,7 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  z-index: 5;
   /* filter: grayscale(100%); */
   /* add this later when image is found */
 }
@@ -158,6 +164,7 @@ html {
   border: solid 1rem gray;
   border-radius: 10px;
   background: white;
+  z-index: 3;
 }
 
 .instructions-container {
