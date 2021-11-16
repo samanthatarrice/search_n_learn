@@ -16,7 +16,10 @@ imagesToFind.forEach(element => {
       close.src = 'images/game_controls/close.png';
       modalBackground.appendChild(close).classList.add('close');
 
-      close.addEventListener('click', () => modalBackground.style.display = 'none');
+      close.addEventListener('click', () => {
+        twelveDays.src = '';
+        modalBackground.style.display = 'none';
+      })
     }
 
   })
