@@ -4,6 +4,10 @@ html {
   box-sizing: border-box;
 }
 
+/* body {
+  position: relative;
+} */
+
 .game-container {
   margin: 5rem 0 10rem 0;
   position: relative;
@@ -24,40 +28,58 @@ html {
      transform: translateX(-50%);
 }
 
+.top-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .game-buttons {
+  display: flex;
+  position: relative;
+  left: 14%;
   /* width: 6rem;
   height: 6rem;
   position: absolute;
   left: 14%; */
-  position: absolute;
+  /* position: relative;
   width: 14rem;
-  top: 40%;
+  top: ;
   left: 14%;
-  z-index: 2;
+  z-index: 2; */
 }
 
 .mute, .reset {
   width: 6rem;
-  height: auto;
-  position: relative;
+  height: 6rem;
+  /* position: relative; */
+}
+
+.mute {
+  margin-right: 1rem;
 }
 
 .reset {
-  left: 11%;
+  margin-left: 1rem;
+  /* left: 11%; */
 }
 
 .tab-container {
-  display: -webkit-flex;
-  /* -webkit-justify-content: end; */
   display: flex;
+  display: -webkit-flex;
+  position: relative;
+  top: 15px;
+  left: 25%;
+  /* margin: 0 auto; */
   /* justify-content: end; */
   /* this isn't working on the ipad */
-  width: 80%;
-  margin: 0 auto;
+  /* -webkit-justify-content: end; */
+  /* width: 100%; */
+  
   /* position: relative; */
-  position: relative;
-  left: 32%;
-  top: 15px;
+  
+  /* left: 32%; */
+  
 }
 
 .tabs {
@@ -139,7 +161,7 @@ html {
 }
 
 .instructions-container {
-  height: 500px;
+  height: 580px;
   font-size: 2.3rem;
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
@@ -190,14 +212,9 @@ html {
     height: 72px;
   }
 
-  .game-buttons {
-    top: 32%;
-    /* left: 14%; */
-    width: 12rem;
-  }
-
   .mute, .reset {
-    width: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .instructions-container {
@@ -224,14 +241,13 @@ html {
     margin: 10px auto;
   }
 
-  .game-buttons {
-    width: 10rem;
-    top: 30%;
-    width: 9rem;
-  }
-
   .mute, .reset {
     width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .mute {
+    margin-right: 0;
   }
 
   .instructions-container {
