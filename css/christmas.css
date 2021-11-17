@@ -124,13 +124,22 @@
 
 /* VIDEOS */
 
-.twelve-days {
-  display: none; /*change to block in script*/
+.video {
   width: 1120px;
   height: 630px;
-  max-width: 90%;
+  max-width: 85%;
   max-height: calc((100vw - 40px) / (16/9));
-  margin: 4% auto;
-  border: 10px solid white;
+  margin: 5% auto;
   border-radius: 10px; 
+  z-index: 10;
+} 
+
+.twelve-days {
+  display: none;
+  border: 10px solid white;
 }
+
+.frosty {
+  display: none;
+  border: 10px solid white;
+} 

@@ -1,5 +1,6 @@
 const imagesToFind = Array.from(document.querySelectorAll('.images-to-find'));
 
+
 imagesToFind.forEach(element => {
   element.addEventListener('click', () => {
     element.style.display = 'none';
@@ -19,6 +20,23 @@ imagesToFind.forEach(element => {
 
       close.addEventListener('click', () => {
         twelveDays.src = '';
+        modalBackground.style.display = 'none';
+      })
+    }
+
+    if (element.className.includes('snowman')) {
+
+      modalBackground.style.display = 'block';
+      
+      const frosty = document.querySelector('.frosty');
+      frosty.style.display = 'block';
+
+      const close = document.createElement('img');
+      close.src = 'images/game_controls/close.png';
+      modalBackground.appendChild(close).classList.add('close');
+
+      close.addEventListener('click', () => {
+        frosty.src = '';
         modalBackground.style.display = 'none';
       })
     }
